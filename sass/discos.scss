@@ -1,0 +1,108 @@
+    @import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+    .albumes2 {
+        text-align: center;
+    }
+    
+    .row1 {
+        display: flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .container6 {
+        width: auto;
+    }
+    
+    .dicospar {
+        width: 400px;
+        height: 400px;
+        /* center content using flex box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* overlay */
+        box-shadow: 0 0 0 200px inset, 0 0 5px grey;
+        /* hover out transition */
+        transition: box-shadow 1s;
+        margin: 10px;
+        &:after {
+            width: 80%;
+            height: 80%;
+            white-space: pre;
+            font: 15pt 'Cambria';
+            color: white;
+            border: 2px solid;
+            text-align: center;
+            /* center content using flex box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* hover out transition */
+            transition: opacity 1s .5s;
+        }
+        &:hover {
+            box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+            transition: box-shadow 1s;
+        }
+        &:hover::after {
+            opacity: 0;
+            transition: opacity .5s;
+        }
+    }
+    
+    // Discos
+    #awkif {
+        background-image: url(../img/allweknowisfalling-frontal.jpg);
+        color: rgba(36, 109, 70, 0.9);
+        background-size: 100%;
+        &:after {
+            content: 'All We Know Is Falling';
+        }
+    }
+    
+    #riot {
+        background-image: url(../img/riot-frontal.jpg);
+        color: rgba(255, 71, 71, 0.966);
+        background-size: 100%;
+        &:after {
+            content: 'Riot!';
+        }
+    }
+    
+    #tfr {
+        background-image: url(../img/The_Final_Riot_-Frontal.jpg);
+        color: rgba(31, 29, 29, 0.966);
+        background-size: 100%;
+        &:after {
+            content: 'The Final Riot!';
+        }
+    }
+    
+    #bne {
+        background-image: url(../img/brandneweyes-frontal.jpg );
+        color: rgba(233, 146, 15, 0.9);
+        background-size: 100%;
+        &:after {
+            content: 'Brand New Eyes';
+        }
+    }
+    
+    #pst {
+        background-image: url(../img/Paramore-Frontal.jpg);
+        color: rgba(0, 2, 122, 0.9);
+        background-size: 100%;
+        &:after {
+            content: 'Paramore Self-Titled';
+        }
+    }
+    
+    #al {
+        background-image: url(../img/AfterLaughter-Frontal.jpg);
+        color: rgba(203, 82, 228, 0.9);
+        background-size: 100%;
+        &:after {
+            content: 'After Laughter';
+        }
+    }

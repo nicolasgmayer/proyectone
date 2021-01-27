@@ -1,0 +1,16 @@
+.btn1 {
+    border-color: #E12B81;
+    background-color: transparent;
+    color: #E12B81;
+    &:hover {
+        color: white;
+        background-color: #E12B81;
+    }
+}
+
+.btn2 {
+    color: rgb(241, 153, 167);
+    .btn2:hover {
+        color: whitesmoke;
+    }
+}
